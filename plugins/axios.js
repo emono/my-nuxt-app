@@ -3,7 +3,7 @@ export default function({ $axios }) {
     if (process.env.QIITA_TOKEN) {
       config.headers.common[
         "Authorization"
-      ] = `Bearer ${}`;
+      ] = `Bearer ${process.env.QIITA_TOKEN}`;
     }
     return config;
   });
