@@ -25,7 +25,7 @@
 export default {
   async asyncData({ app }) {
     const items = await app.$axios.$get(
-      "https://qiita.com/api/v2/items?query=tag:nuxt&page=1&per_page=2"
+      "https://qiita.com/api/v2/items?query=tag:nuxt&page=1&per_page=5"
     );
     return { items };
   }
